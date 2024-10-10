@@ -8,7 +8,6 @@ test("select paragraph and access textContent", () => {
   equal(dom.window.document.querySelector("p")!.textContent, "Hi!");
 });
 
-// NOTE: show class a better way to test this
 test("get all paragraphs", () => {
   const dom = new JSDOM(`
     <!DOCTYPE html><p>Hi!</p><p>Hidyhow!</p>
