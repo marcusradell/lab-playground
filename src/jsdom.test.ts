@@ -13,7 +13,7 @@ test("get all paragraphs", () => {
   const dom = new JSDOM(`
     <!DOCTYPE html><p>Hi!</p><p>Hidyhow!</p>
     `);
-  const result = dom.window.document.querySelectorAll("p")[0];
+  const result = dom.window.document.querySelectorAll("p").length;
 
-  deepEqual(result, dom.window.document.createElement("p"));
+  deepEqual(result, 2);
 });
